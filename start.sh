@@ -1,2 +1,2 @@
-echo "starting Url Uploader Bot ~@Tellybots";
+echo "starting Url Uploader Bot ~@KDramasFlix";
 python3 -m bot
