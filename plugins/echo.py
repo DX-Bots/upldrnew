@@ -45,7 +45,7 @@ async def echo(bot, update):
         except Exception as error:
             print(error)
     if not update.from_user:
-        return await update.reply_text("I don't know about you sar :(")
+        return await update.reply_text("Who the Hell Are You?")
     await add_user_to_database(bot, update)
     await bot.send_chat_action(
        chat_id=update.chat.id,
@@ -125,7 +125,7 @@ async def echo(bot, update):
     logger.info(command_to_exec)
     chk = await bot.send_message(
             chat_id=update.chat.id,
-            text=f'ᴘʀᴏᴄᴇssɪɴɢ ʏᴏᴜʀ ʟɪɴᴋ ⌛',
+            text=f'Pʀᴏᴄᴇssɪɴɢ ʏᴏᴜʀ URL....⚡',
             disable_web_page_preview=True,
             reply_to_message_id=update.message_id
           )
