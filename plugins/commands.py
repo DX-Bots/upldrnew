@@ -21,7 +21,7 @@ from functions.forcesub import handle_force_subscribe
 @Client.on_message(filters.command(["start"]) & filters.private)
 async def start(bot, update):
     if not update.from_user:
-        return await update.reply_text("I don't know about you sar :(")
+        return await update.reply_text("Who the Hell Are You?")
     await add_user_to_database(bot, update)
     await bot.send_message(
         Config.LOG_CHANNEL,
