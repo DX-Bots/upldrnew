@@ -42,7 +42,7 @@ async def start(bot, update):
     )
 
 @Client.on_message(filters.command(["help"]) & filters.private)
-async def help(bot, update):
+async def help_user(bot, update):
     if not update.from_user:
         return await update.reply_text("Who the Hell Are You?")
     await add_user_to_database(bot, update)
@@ -65,7 +65,7 @@ async def help(bot, update):
     )
 
 @Client.on_message(filters.command(["about"]) & filters.private)
-async def about(bot, update):
+async def about_user(bot, update):
     if not update.from_user:
         return await update.reply_text("Who the Hell Are You?")
     await add_user_to_database(bot, update)
